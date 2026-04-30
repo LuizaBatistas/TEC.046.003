@@ -37,5 +37,15 @@ class Animal {
     Kiki.falar ("Click Click");
     Kiki.cresceDentes();
 
+    class Calopsita extends Animal {
+        imitarvoz() {
+            console.log (`A ${this.nome} imitou o cachorro.`)
+        }
+    }
+
+    let lolo = new Calopsita ("Lolo");
+    lolo.falar("Au Au");
+    lolo.imitarvoz();
+
     
     
