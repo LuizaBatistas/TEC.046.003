@@ -1,0 +1,36 @@
+<html>
+    <style>
+        h1 {
+            color: azure;
+        }
+        body{
+            background-color: rgb(24, 119, 119);
+        }
+        #nav {
+            color: rgb(255, 255, 255);
+        }
+        #button{
+            color:rgb(212, 247, 244);
+            
+        }
+    </style>
+    <head>
+       <title>Aprendendo DOM</title>
+    </head> 
+        <body>
+            <h1>Modelo de Objeto de Documento</h1>
+             <a id="nav" href="index.html">Página inicial</a>
+            <img id="lampada" src="apagada.jpg"/>
+            <button onclick="ligar()">Ligar</button>
+            <button onclick="desligar()">Desligar</button>
+            <script>
+                function ligar() {
+                    document.getElementById ('lampada').src = 'acesa.jpg';
+                }
+                function desligar() {
+                    document.getElementById ('lampada').src = 'apagada.jpg';
+                }
+
+            </script>
+        </body>
+</html>
